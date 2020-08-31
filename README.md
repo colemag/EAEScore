@@ -1,4 +1,5 @@
 # EAEScore
+##### Cole Maguire
 This shiny-based application was designed to help graph and analyze Experimental Autoimmune Encephalomyelitis (EAE) data. EAE is the most commonly used animal model of Multiple Sclerosis, and can be complex due to its longitiduinal design. To help researchers we built this tool which is also hosted free-to-use at eaescore.net
 I recommend using the web-hosted version as it requires no set-up. However, should you want to run the app locally this is the source code for the application. You will need to install all of the dependencies the app uses as listed below:
 
