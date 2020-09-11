@@ -1,0 +1,12 @@
+﻿Score,Description
+0,No symptoms.
+0.5,Weakness in tip of the tail.
+1,Entire tail is limp.
+1.5,"Tail is limp, and when mouse walks on wire rack, its hind feet fall through."
+2,Tail is limp and hind limbs begin to show weakness (tripping on own feet).
+2.5,Tail is limp and hind limbs are dragging but still have some movement.
+3,Tail is limp and hind limbs are totally paralyzed.
+3.5,"Tail is limp, hind limbs are paralyzed, and the mouse's back is hunched."
+4,"Tail is limp, hind limbs are paralyzed, and weakness in the front limbs. Euthanasia recommended if score of 4 persists for 2 days."
+4.5,"Same as 4, but mouse is unable to move around the cage. Euthanasia recommended."
+5,Euthanized or dead.
