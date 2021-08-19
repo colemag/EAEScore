@@ -95,7 +95,7 @@ server <- function(input, output, session){
                 med <- read.csv("testdataset3.csv")
             }
         } else if (input$testdata == F){
-            if(grepl(".csv", infile$datapath){
+            if(grepl(".csv", infile$datapath)){
                  med <- read.csv(infile$datapath)
             } else {
                 med <- read_excel(infile$datapath)
@@ -172,7 +172,7 @@ server <- function(input, output, session){
                 store <- read.csv("testdataset3.csv")
             }
         } else if (input$testdata == F){
-            if(grepl(".csv", infile$datapath){
+            if(grepl(".csv", infile$datapath)){
                  store <- read.csv(infile$datapath)
             } else {
                 store <- read_excel(infile$datapath)
