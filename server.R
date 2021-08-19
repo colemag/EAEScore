@@ -94,7 +94,7 @@ server <- function(input, output, session){
                 med <- read.csv("testdataset3.csv")
             }
         } else if (input$testdata == F){
-            med <- read.csv(infile$datapath, fileEncoding="UTF=8-BOM")
+            med <- read.csv(infile$datapath)
         }
         colnames(med) <- gsub('X', 'Day ', colnames(med))
         med <- med[,sapply(med, function(x) { sum(!is.na(x)) > 0 })]
@@ -167,7 +167,7 @@ server <- function(input, output, session){
                 store <- read.csv("testdataset3.csv")
             }
         } else if (input$testdata == F){
-            store <- read.csv(infile$datapath, fileEncoding="UTF=8-BOM")
+            store <- read.csv(infile$datapath)
         }
         store <- store[,sapply(store, function(x) { sum(!is.na(x)) > 0 })]
         ## Subs out Xs for 5s
