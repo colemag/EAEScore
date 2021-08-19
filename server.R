@@ -87,7 +87,7 @@ server <- function(input, output, session){
         # }
         if(input$testdata == T){
             if(input$testdataselected == "Test Data Set 1"){
-                med <- ("testdataset1.csv")
+                med <- read.csv("testdataset1.csv")
             } else if (input$testdataselected == "Test Data Set 2"){
                 med <- read.csv("testdataset2.csv")
             } else if (input$testdataselected == "Test Data Set 3"){
