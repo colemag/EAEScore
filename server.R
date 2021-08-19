@@ -12,6 +12,7 @@ server <- function(input, output, session){
     require(gtools)
     require(cowplot)
     require(MASS)
+    require(readxl)
     dft <- function(dft) {
         tdf = t(df)
         colnames(tdf) = rownames(df)
@@ -94,7 +95,11 @@ server <- function(input, output, session){
                 med <- read.csv("testdataset3.csv")
             }
         } else if (input$testdata == F){
-            med <- read.csv(infile$datapath)
+            if(grepl(".csv", infile$datapath){
+                 med <- read.csv(infile$datapath)
+            } else {
+                med <- read_excel(infile$datapath)
+            }
         }
         colnames(med) <- gsub('X', 'Day ', colnames(med))
         med <- med[,sapply(med, function(x) { sum(!is.na(x)) > 0 })]
@@ -167,7 +172,11 @@ server <- function(input, output, session){
                 store <- read.csv("testdataset3.csv")
             }
         } else if (input$testdata == F){
-            store <- read.csv(infile$datapath)
+            if(grepl(".csv", infile$datapath){
+                 store <- read.csv(infile$datapath)
+            } else {
+                store <- read_excel(infile$datapath)
+            }
         }
         store <- store[,sapply(store, function(x) { sum(!is.na(x)) > 0 })]
         ## Subs out Xs for 5s
